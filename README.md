@@ -35,6 +35,6 @@ AutoVall is a full-stack web application that allows users to estimate car price
 ## Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/....git
-cd ..../backend/flask_ML 
+```bash 
+git clone https://github.com/yourusername/AutoVal.git
+cd AutoVal/backend/flask_ML 
