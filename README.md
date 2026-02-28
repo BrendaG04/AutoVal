@@ -18,8 +18,8 @@ A full-stack machine learning web app that predicts used car prices based on mak
 </div>
 <br/>
 <div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="docs/predictAutoVal.png" width="450" height="600" />
-  <img src="docs/favAutoVal.png" width="450" height="600" />
+  <img src="docs/predictAutoVal.png" width="400" height="550" />
+  <img src="docs/favAutoVal.png" width="400" height="550" />
 </div>
 
 
