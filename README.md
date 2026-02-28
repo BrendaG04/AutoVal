@@ -1,18 +1,16 @@
-# 🚗 AutoVal — AI Car Price Predictor
+# AutoVal — AI Car Price Predictor
 
-[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
-[![Flask](https://img.shields.io/badge/Flask-3.0-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
-[![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.4-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
-[![XGBoost](https://img.shields.io/badge/XGBoost-ML-blue)](https://xgboost.readthedocs.io/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+![React](https://img.shields.io/badge/React-19-blue)
+![Flask](https://img.shields.io/badge/Flask-3.0-000000)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-green)
+![XGBoost](https://img.shields.io/badge/XGBoost-ML-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)
 
 A full-stack machine learning web app that predicts used car prices based on make, model, year, mileage, and other vehicle attributes. Built with a **React** frontend, **Flask + XGBoost** ML backend, and **Spring Boot + PostgreSQL** authentication/favorites backend.
 
 > Trained on **338,000+** real vehicle listings with an **R² of 0.92** and **MAE of ~$2,300**.
 
 ---
-
-## 📸 Screenshots
 
 | Home Page | Prediction Form | Favorites |
 |-----------|----------------|-----------|
