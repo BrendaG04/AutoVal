@@ -727,12 +727,15 @@ def predict():
 
         input_data = pd.DataFrame([input_dict])[model_bundle['feature_names']]
 
-        prediction = model.predict(input_data)[0]
-        prediction = max(prediction, 500)
+        raw_prediction = model.predict(input_data)[0]
+        logger.info(f"Raw prediction: {raw_prediction}, input: manufacturer={manufacturer}, model={car_model}, year={year}, odometer={odometer}")
+        logger.info(f"Encodings: mfr={manufacturer_encoded}, model={model_encoded}, age={age}")
+        prediction = max(raw_prediction, 500)
         prediction = min(prediction, pp['price_cap'])
 
         return jsonify({
             'prediction': round(float(prediction), 2),
+            'raw_prediction': round(float(raw_prediction), 2),
             'status': 'success',
         })
 
