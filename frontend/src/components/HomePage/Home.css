@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+  
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+
+}
+  
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5rem;
+    position: relative;
+    margin: 0 auto;
+}
+  
+.hero-section {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+.hero-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+}
+  
+.hero-text {
+    flex: 1;
+    max-width: 36rem;
+}
+  
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: hsl(0, 0%, 15%);
+
+}
+
+
+
+.car-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.car-image {
+    max-width: 140%;
+    height: auto;
+    max-height: 30rem;
+    object-fit: contain;
+}
+
+.makePredictionButton {
+    padding: 0.75rem 1.5rem;
+    background-color: hsl(0, 0%, 0%);
+    color: #ffffff;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+  
+.makePredictionButton:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+  
+@media (max-width: 768px) {
+    .main-content {
+        padding: 0 1.5rem;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+    }
+    
+    .hero-text {
+        max-width: 100%;
+        padding: 2.0rem;
+    }
+    
+    .car-image-container {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .main-heading {
+        font-size: 1.90rem;
+    }
+    
+    .makePredictionButton {
+        margin: 0 auto;
+    }
+}
+
+/* ── How It Works Section ── */
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 40%);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.how-it-works {
+    padding: 3rem 2.5rem;
+    background-color: #ffffff;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 15%);
+    margin-bottom: 2rem;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.step-card {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #1f2937;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.step-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: hsl(0, 0%, 15%);
+}
+
+.step-card p {
+    font-size: 0.95rem;
+    color: hsl(0, 0%, 40%);
+    line-height: 1.5;
+}
+
+/* ── Stats Section ── */
+.stats-section {
+    padding: 2.5rem 2.5rem 3rem;
+    background-color: #f9f9f9;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 10%);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 45%);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .steps-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .how-it-works {
+        padding: 2rem 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .main-content {
+        padding: 3rem 1.0rem;
+    }
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 0rem;
+    }
+
+    .main-heading {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text {
+        max-width: 100%;
+        padding: 2.0rem;
+    }
+    .car-image-container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .makePredictionButton {
+        margin: 0 auto;
+    }
+}

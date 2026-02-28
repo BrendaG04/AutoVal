@@ -1,0 +1,270 @@
+.prediction-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.prediction-container .CarMakeInfo-Title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.prediction-subtitle {
+  text-align: center;
+  color: hsl(0, 0%, 50%);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.error-banner {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.form-group select {
+  padding: 0.65rem 0.75rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  color: #1f2937;
+  background-color: #f9fafb;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  cursor: pointer;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #1f2937;
+  box-shadow: 0 0 0 3px rgba(31, 41, 55, 0.1);
+}
+
+.form-group select:disabled {
+  background-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* ── Range slider styling ── */
+.range-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+}
+
+.range-display label {
+  margin-bottom: 0;
+}
+
+.range-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.form-group input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  outline: none;
+  margin-top: 0.25rem;
+}
+
+.form-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #1f2937;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.form-group input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.form-group input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #1f2937;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* ── Checkbox ── */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  text-transform: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #374151;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: #1f2937;
+  cursor: pointer;
+}
+
+/* ── Predict button ── */
+.predict-button {
+  grid-column: 1 / -1;
+  padding: 0.85rem 1rem;
+  margin-top: 0.5rem;
+  background-color: #1f2937;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.predict-button:hover:not(:disabled) {
+  background-color: #374151;
+}
+
+.predict-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.predict-button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* ── Result card ── */
+.prediction-result {
+  margin-top: 2rem;
+  padding: 1.75rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 1.5px solid #bbf7d0;
+  border-radius: 0.75rem;
+}
+
+.prediction-result h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #166534;
+  margin-bottom: 0.25rem;
+}
+
+.save-button {
+  margin-top: 1rem;
+  padding: 0.6rem 2rem;
+  background-color: #1f2937;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+.save-button:hover {
+  background-color: #374151;
+}
+
+.login-prompt {
+  color: #6b7280;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.login-prompt a {
+  color: #1f2937;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ── Loading spinner ── */
+.spinner-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .prediction-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

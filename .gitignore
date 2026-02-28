@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Node
+node_modules/
+dist/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Java / Maven
+target/
+
+# Environment files (contain secrets — .env.example is allowed)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Large data files
+vehicles.csv
+
+# Logs
+*.log
