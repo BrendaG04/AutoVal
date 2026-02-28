@@ -1,24 +1,29 @@
 # AutoVal — AI Car Price Predictor
 
+
+A full-stack machine learning web app that predicts used car prices based on make, model, year, mileage, and other vehicle attributes. Built with a **React** frontend, **Flask + XGBoost** ML backend, and **Spring Boot + PostgreSQL** authentication/favorites backend.
+
+> Trained on **338,000+** real vehicle listings with an **R² of 0.92** and **MAE of ~$2,300**.
+
+
 ![React](https://img.shields.io/badge/React-19-blue)
 ![Flask](https://img.shields.io/badge/Flask-3.0-000000)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-green)
 ![XGBoost](https://img.shields.io/badge/XGBoost-ML-blue)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)
 
-A full-stack machine learning web app that predicts used car prices based on make, model, year, mileage, and other vehicle attributes. Built with a **React** frontend, **Flask + XGBoost** ML backend, and **Spring Boot + PostgreSQL** authentication/favorites backend.
 
-> Trained on **338,000+** real vehicle listings with an **R² of 0.92** and **MAE of ~$2,300**.
+<div align="center">
+  <img src="docs/homeAutoVal.png" width="1000" height="650"/>
+</div>
+<br/>
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="docs/predictAutoVal.png" width="500" height="600" />
+  <img src="docs/favAutoVal.png" width="500" height="600" />
+</div>
 
----
 
-| Home Page | Prediction Form | Favorites |
-|-----------|----------------|-----------|
-| ![Home](docs/homeAutoVal.png) | ![Predict](docs/predictAutoVal.png) | ![Favorites](docs/favAutoVal.png) |
-
----
-
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────┐     ┌──────────────────┐     ┌──────────────────────┐
@@ -38,7 +43,7 @@ A full-stack machine learning web app that predicts used car prices based on mak
 
 ---
 
-## ✨ Features
+## Features
 
 - **ML Price Prediction** — XGBoost model trained on 338K+ Craigslist listings
 - **Smart Dropdowns** — Normalized car makes/models with 550+ options
@@ -51,7 +56,7 @@ A full-stack machine learning web app that predicts used car prices based on mak
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -165,7 +170,7 @@ AutoVal/
 
 ## 📝 License
 
-This project is for educational and portfolio purposes.
+This project is for educational purposes.
 
 ---
 
