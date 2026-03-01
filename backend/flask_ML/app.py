@@ -48,19 +48,10 @@ with open(os.path.join(BASE_DIR, 'model', 'car_price_predictor.pkl'), 'rb') as f
 
 model = xgb.XGBRegressor()
 
-raw_model_path = model_bundle.get('model_path', 'car_price_model.json')
-candidate_paths = [
-    raw_model_path,
-    os.path.join(BASE_DIR, 'model', raw_model_path),
-    os.path.join(BASE_DIR, raw_model_path),
-    os.path.join(BASE_DIR, 'model', os.path.basename(raw_model_path)),
-    os.path.join(BASE_DIR, os.path.basename(raw_model_path)),
-]
-resolved_model_path = next((p for p in candidate_paths if p and os.path.exists(p)), None)
-if not resolved_model_path:
-    raise FileNotFoundError(f"Could not find model file. Tried: {candidate_paths}")
-
-model.load_model(resolved_model_path)
+model_file = os.path.join(BASE_DIR, 'model', 'car_price_model.ubj')
+if not os.path.exists(model_file):
+    model_file = os.path.join(BASE_DIR, 'model', 'car_price_model.json')
+model.load_model(model_file)
 
 pp = model_bundle['preprocessors']
 
