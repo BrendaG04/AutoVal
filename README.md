@@ -5,6 +5,8 @@ A full-stack machine learning web app that predicts used car prices based on mak
 
 > Trained on **338,000+** real vehicle listings with an **R² of 0.92** and **MAE of ~$2,300**.
 
+### 🔗 [Live Demo → autoval.app](https://autoval.app)
+
 
 ![React](https://img.shields.io/badge/React-19-blue)
 ![Flask](https://img.shields.io/badge/Flask-3.0-000000)
