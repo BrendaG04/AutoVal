@@ -6,10 +6,11 @@ A full-stack machine learning web app that predicts used car prices based on mak
 
 > Trained on **338,000+** real vehicle listings with an **R² of 0.92** and **MAE of ~$2,300**.
 
+![Project Status](https://img.shields.io/badge/status-deployed-success)
 ![React](https://img.shields.io/badge/React-19-blue)
-![Flask](https://img.shields.io/badge/Flask-3.0-000000)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-green)
 ![XGBoost](https://img.shields.io/badge/XGBoost-ML-blue)
+![Flask](https://img.shields.io/badge/Flask-3.0-000000)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)
 
 
