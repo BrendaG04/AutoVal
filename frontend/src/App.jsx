@@ -1,4 +1,5 @@
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Home from './components/HomePage/Home';
 import Header from './components/Header/Header';
 import Prediction from './components/PredictionPage/Prediction';
@@ -26,6 +27,7 @@ function App() {
           </Routes>
         </main>
       </Router>
+      <Analytics />
     </ErrorBoundary>
   )
 }
