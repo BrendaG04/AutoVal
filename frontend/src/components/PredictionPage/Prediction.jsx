@@ -25,6 +25,7 @@ function Prediction() {
 
   const [prediction, setPrediction] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [optionsLoading, setOptionsLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const { isAuthenticated } = useAuth();
@@ -65,6 +66,8 @@ function Prediction() {
         });
       } catch (err) {
         setError('Failed to load car options.');
+      } finally {
+        setOptionsLoading(false);
       }
     };
 
@@ -186,6 +189,12 @@ function Prediction() {
 
       {error && <div className="error-banner">{error}</div>}
 
+      {optionsLoading ? (
+        <div className="options-loading">
+          <span className="spinner" />
+          <p>Loading car data… This may take a moment on first visit.</p>
+        </div>
+      ) : (
       <form className="form-grid" onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Brand</label>
@@ -369,6 +378,7 @@ function Prediction() {
           )}
         </button>
       </form>
+      )}
 
       {prediction !== null && (
         <div className="prediction-result">

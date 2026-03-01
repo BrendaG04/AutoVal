@@ -243,6 +243,27 @@
   gap: 0.5rem;
 }
 
+.options-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 1rem;
+  color: #6b7280;
+}
+
+.options-loading .spinner {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #e5e7eb;
+  border-top-color: #1f2937;
+}
+
+.options-loading p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
 .spinner {
   display: inline-block;
   width: 1rem;
