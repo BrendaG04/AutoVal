@@ -718,21 +718,12 @@ def predict():
 
         input_data = pd.DataFrame([input_dict])[model_bundle['feature_names']]
 
-        raw_prediction = model.predict(input_data)[0]
-        prediction = max(raw_prediction, 500)
+        prediction = model.predict(input_data)[0]
+        prediction = max(prediction, 500)
         prediction = min(prediction, pp['price_cap'])
 
         return jsonify({
             'prediction': round(float(prediction), 2),
-            'debug': {
-                'raw': round(float(raw_prediction), 2),
-                'mfr_enc': round(float(manufacturer_encoded), 2),
-                'model_enc': round(float(model_encoded), 2),
-                'age': age,
-                'global_mean': round(float(global_mean), 2),
-                'input_keys': list(input_dict.keys()),
-                'xgb_version': xgb.__version__,
-            },
             'status': 'success',
         })
 
