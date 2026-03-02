@@ -175,4 +175,4 @@ This project is for educational purposes.
 
 ---
 
-Built by [Brenda G.](https://github.com/BrendaG04)
+Built by [Brenda](https://github.com/BrendaG04)
